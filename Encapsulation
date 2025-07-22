@@ -1,0 +1,30 @@
+class main{
+    public static void main(String[] args){
+        Account rajeev = new Account();
+        rajeev.deposit(1000);
+        Account dinesh = new Account();
+        dinesh.deposit(5000);
+    
+    }
+}
+class Account{
+    private int bal = 0;
+    
+    void deposit (int amount){
+        bal += amount;
+        System.out.println(amount+" deposited Successfully.Available balance is "+ bal );
+    }
+    void display(){
+        System.out.println("Available balance is "+ bal );
+
+    }
+    void withdraw(int amount)
+    {if(bal>=amount){
+        bal-= amount;
+                System.out.println("Available balance is "+ bal );
+    }
+        else{
+            System.out.println("Insufficient Balance");
+      }
+    }
+    }
