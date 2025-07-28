@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Main {
+    static void printn(int[] arr) {
+        for (int i : arr) System.out.print(i + " ");
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int Size = sc.nextInt();
+
+        int[] arr = new int[Size];
+        for (int i = 0; i < Size; i++) {
+            System.out.print("Element " + (i + 1) + ": ");
+            arr[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < Size - 1; i++) {
+            for (int j = 0; j < Size - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+        printn(arr); 
+        if (Size % 2 != 0)
+            System.out.print("The median is " + arr[Size / 2]);
+        else {
+            double median = ((arr[(Size / 2) - 1] + arr[Size / 2]) / 2.0);
+            System.out.print("The median is " + median);
+        }
+    }
+}
+
+
