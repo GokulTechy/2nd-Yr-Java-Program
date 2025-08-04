@@ -1,0 +1,10 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        String test = "sret";
+        test = test.toLowerCase(); 
+        test = Character.toUpperCase(test.charAt(0))+test.substring(1);
+        System.out.print(test); 
+    }
+}
