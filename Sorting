@@ -1,0 +1,9 @@
+import java .util.*;
+class Main {
+    public static void main(String[] args) {
+       int[] arr = {12,123,55,03,55,123,12};
+       Arrays.sort(arr);
+       System.out.print(Arrays.toString(arr));
+       
+    }
+}
