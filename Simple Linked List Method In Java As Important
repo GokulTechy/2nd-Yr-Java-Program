@@ -1,0 +1,24 @@
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        LinkedList<Integer> book= new LinkedList<>();
+        book.add(10);
+        book.add(20);
+        book.addFirst(30);
+        System.out.println(book);
+        book.addLast(40);
+        System.out.println(book);
+        book.remove(2);
+        System.out.println(book);
+        book.removeFirst();
+        System.out.println(book.size());
+        book.set(0,50);
+        System.out.println(book);
+        
+        
+                
+
+
+        
+    }
+}
