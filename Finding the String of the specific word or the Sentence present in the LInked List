@@ -1,0 +1,9 @@
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        LinkedList<String> book= new LinkedList<>();
+        book.add("Apple");
+        book.addFirst("Orange");
+        System.out.print(" Apple present in the List: "+book.contains("Apple"));
+    }
+}
