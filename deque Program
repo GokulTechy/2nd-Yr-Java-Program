@@ -1,0 +1,13 @@
+Import java. Util*;
+Class Main{
+public static void main(String[] args) {
+Deque<Integer>deque=new ArrayDeque<>() ;
+deque.addFirst(10);
+deque.addlast(20);
+deque.addFirst(5);
+deque.addlast(25);
+System.out.println ("Deque after additions:" +deque) :
+deque. removalfirst() ;
+deque. removallast() ;
+
+
